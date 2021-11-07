@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "43a8a6e444590514bb4b9f6a02112d0f",
+    "content-hash": "37df91ca28978a30e74bcaf08b61b727",
     "packages": [
         {
             "name": "brick/math",
@@ -2018,6 +2018,75 @@
                 "source": "https://github.com/laravel/serializable-closure"
             },
             "time": "2021-10-07T14:00:57+00:00"
+        },
+        {
+            "name": "max13/laravel-sqfix",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Max13/laravel-sqfix.git",
+                "reference": "693feb9477f314b87c1b2151b926e1b8e0b8dc16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Max13/laravel-sqfix/zipball/693feb9477f314b87c1b2151b926e1b8e0b8dc16",
+                "reference": "693feb9477f314b87c1b2151b926e1b8e0b8dc16",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^7.0|^8.0",
+                "php": "^7.3|^7.4|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0",
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Mx\\Sqfix\\SqfixServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mx\\Sqfix\\": "src/Mx/Sqfix"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adnan RIHAN",
+                    "email": "adnan@rihan.fr",
+                    "homepage": "https://adnan.rihan.fr/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel package fixing SQLite Schema grammar",
+            "homepage": "https://github.com/max13/laravel-sqfix",
+            "keywords": [
+                "laravel-sqfix",
+                "max13"
+            ],
+            "support": {
+                "issues": "https://github.com/Max13/laravel-sqfix/issues",
+                "source": "https://github.com/Max13/laravel-sqfix/tree/v1.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/max13",
+                    "type": "github"
+                },
+                {
+                    "url": "https://adnan.rihan.fr/",
+                    "type": "other"
+                }
+            ],
+            "time": "2021-01-13T01:48:39+00:00"
         },
         {
             "name": "monolog/monolog",
