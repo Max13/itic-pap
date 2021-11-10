@@ -1,5 +1,24 @@
 <?php
 
+// CORS
+$headers = [
+    'Access-Control-Allow-Origin'      => '*',
+    'Access-Control-Allow-Methods'     => 'POST, GET, OPTIONS, PUT, DELETE',
+    'Access-Control-Allow-Credentials' => 'true',
+    'Access-Control-Max-Age'           => '86400',
+    'Access-Control-Allow-Headers'     => 'Content-Type, Authorization, X-Requested-With',
+];
+
+foreach($headers as $key => $value) {
+    header("$key: $value");
+}
+
+if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
+    header('Content-Type: application/json');
+    die('{"method":"OPTIONS"}');
+}
+// /CORS
+
 // Get requested action
 $action = $_GET['action'] ?? 'error';
 $controller = null;
